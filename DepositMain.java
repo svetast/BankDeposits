@@ -18,10 +18,10 @@ public class DepositMain {
 		myArr[3] = new Deposit();
 		myArr[3].setParams("Deposit Month", "usd", 60, 15000, 10);
 		myArr[4] = new Deposit();
-		myArr[4].setParams("Deposit Free", "usd", 30, 1000, 8);
+		myArr[4].setParams("Deposit FreeUse", "usd", 30, 1000, 8);
 		myArr[5] = new Deposit();
-		myArr[5].setParams("Deposit Free", "euro", 365, 12000, 6);
-				System.out.println(" sum = " +  myArr[5].getSum(32));// primer
+		myArr[5].setParams("Deposit FreeUse", "euro", 365, 12000, 6);
+				//System.out.println(" sum = " +  myArr[5].getSum(32));// primer
 		
 		
 	}
