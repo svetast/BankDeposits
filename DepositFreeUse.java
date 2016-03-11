@@ -7,9 +7,13 @@ public class DepositFreeUse extends Deposit { // только с возможн�
 		if(nTime < getTime()) ;
 		return 0;
 		
-		return getDiscont()/getDays()*100.0 *(sumStart *getTime()+getSumIncrease()*getTime1()) + sumStart +getSumIncrease());			
+		return getDiscont()/getDays()*100.0 *(sumStart * getTime()+
+				getSumIncrease()*getTime1()) + getSumIncrease() + sumStart;			
 				
 		 
 	}
+
+	
+	
 	
 }
