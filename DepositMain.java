@@ -1,6 +1,10 @@
 package ua.org.oa.stepanovas;
 
+import java.text.DecimalFormat;
+
 public class DepositMain {
+
+	private static Object getSum;
 
 	public static void main(String[] args) {
 		Deposit[] myArr;
@@ -19,8 +23,9 @@ public class DepositMain {
 		myArr[5].setParams("Number6", "euro", 120, 12000, 12);
 		myArr[6] = new DepositSimple();
 		myArr[6].setParams("Number7", "euro", 30, 5000, 9);
-		System.out.println(" sum = " +  myArr[6].getSum(32));
-		System.out.println(" sum = " +  myArr[3].getSum(132));
+		System.out.println(" sum = " +  myArr[6].getSumSimple(32));
+		
+		
 	}
 
 }
