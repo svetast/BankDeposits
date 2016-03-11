@@ -13,7 +13,12 @@ public class Deposit {
 								// сумма+проценты
 	private double discont = 0; // годовая процентная ставка по депозиту
 
-	public double getSum (int nTime)
+	public double getSumMonth (int nTime)
+	{
+		return 0;
+	}
+	
+	public double getSumSimple (int nTime)
 	{
 		return 0;
 	}
