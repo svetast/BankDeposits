@@ -1,5 +1,5 @@
 package ua.org.oa.stepanovas;
-
+// Расчет депозита с помесячной выплатой процентов
 public class DepositMonth extends Deposit {
 
 	public double getSum(int nTime) {
