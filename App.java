@@ -2,7 +2,7 @@ package ua.org.oa.stepanovas;
 
 import java.text.DecimalFormat;
 
-public class DepositMain {
+public class App {
 
 	private static Object getSum;
 
