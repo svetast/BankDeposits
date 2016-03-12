@@ -70,6 +70,10 @@ public class Deposit {
 	public void setTime1(int time1) {
 		this.time1 = time1;
 	}
+
+
+
+	
 }
 	
 	
