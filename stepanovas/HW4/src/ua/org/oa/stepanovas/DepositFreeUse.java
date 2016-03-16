@@ -1,5 +1,5 @@
 package ua.org.oa.stepanovas;
-// Расчет депозита с с возможностью пополнения
+
 public class DepositFreeUse extends Deposit { 
 												
 	public double getSum (int nTime)
@@ -15,6 +15,3 @@ public class DepositFreeUse extends Deposit {
 	}
 
 	}
-	
-	
-

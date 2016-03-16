@@ -2,17 +2,17 @@ package ua.org.oa.stepanovas;
 
 public class Deposit {
 
-	private String name = null; // название вклада
-	private String kind = null; // валюта вклада
-	private int time = 0; // срок вклада в календарных днях
-	private int time1 = 0; // срок вклада ( довложения) в календарных днях
-	public static final int DAYS = 365;// количество дней в календарном году
-	//protected final int NUMBER = 100;// коэффициент для расчетов
-	public double sumStart = 0; // сумма вклада
-	private double sumIncrease = 0; // сумма довложения по вкладу
-	private double sumFinal = 0; // сумма к возврату вкладчику = первоначальная сумма+проценты
+	private String name = null; 
+	private String kind = null; 
+	private int time = 0; 
+	private int time1 = 0; 
+	public static final int DAYS = 365;
+	//protected final int NUMBER = 100;
+	public double sumStart = 0; 
+	private double sumIncrease = 0; 
+	private double sumFinal = 0; 
 								
-	private double discont = 0; // годовая процентная ставка по депозиту
+	private double discont = 0; 
 
 	public double getSum (int nTime)
 	{
@@ -48,7 +48,7 @@ public class Deposit {
 		return 0;
 	}
 	
-	// исходные данные по видам депозитов - информативно:
+	
 	public void setParams(String nname, String nkind, int ntime, double nsumStart, double ndiscont) {
 		System.out.println("Deposit " + nname + "  valuta: " + nkind + "   days:" + ntime + "   summ: " + nsumStart
 				+ "  discont: " + ndiscont + " % ");
@@ -70,6 +70,12 @@ public class Deposit {
 	public void setTime1(int time1) {
 		this.time1 = time1;
 	}
+	public abstract double calculateDeposit();
+
+
+	public void addDeposit(String nname, String nkind, int ntime, double nsumStart, double ndiscont) {
+		
+	}
 
 
 
@@ -82,5 +88,4 @@ public class Deposit {
 	
 		
 	
-
 
