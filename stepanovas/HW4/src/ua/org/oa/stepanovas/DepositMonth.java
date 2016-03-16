@@ -9,5 +9,11 @@ public class DepositMonth extends Deposit {
 
 	}
 
+	@Override
+	public double calculateDeposit() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
 }

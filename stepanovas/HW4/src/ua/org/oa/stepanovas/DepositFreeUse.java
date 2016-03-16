@@ -2,7 +2,7 @@ package ua.org.oa.stepanovas;
 
 public class DepositFreeUse extends Deposit { 
 												
-	public double getSum (int nTime)
+	public double calculateDeposit (int nTime)
 	{
 		if(nTime < getTime()) 
 			return 0;
@@ -12,6 +12,12 @@ public class DepositFreeUse extends Deposit {
 				getSumIncrease()*getTime1()) ;			
 				
 		 
+	}
+
+	@Override
+	public double calculateDeposit() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	}

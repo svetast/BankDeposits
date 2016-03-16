@@ -1,6 +1,6 @@
 package ua.org.oa.stepanovas;
 
-public class Deposit {
+public abstract class Deposit {
 
 	private String name = null; 
 	private String kind = null; 
