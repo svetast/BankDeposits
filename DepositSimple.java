@@ -1,11 +1,11 @@
-// Расчет депозита с простым начислением процентов
+
 package ua.org.oa.stepanovas;
 
 import java.text.DecimalFormat;
 
 public class DepositSimple extends Deposit {
 
-	public double getSum (int nTime)
+	public double calculateDeposit (int nTime)
 	{
 		if(nTime < getTime())
 			return 0;
