@@ -12,4 +12,10 @@ public class DepositSimple extends Deposit {
 		return sumStart + getDiscont() / 100.0 * sumStart / getDays() * nTime;
 		
 	}
+
+	@Override
+	public double calculateDeposit() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
