@@ -1,21 +1,28 @@
-
 package ua.org.oa.stepanovas;
 
 import java.text.DecimalFormat;
 
 public class DepositSimple extends Deposit {
 
-	public double calculateDeposit (int nTime)
-	{
-		if(nTime < getTime())
+	public DepositSimple(String nname, 
+			String currency, 
+			int ntime, 
+			double nsumStart, 
+			double ndiscont) {																																								// класса
+		super(nname, currency, ntime, nsumStart, ndiscont);
+	}
+
+	public double calculateDeposit(int nTime) {
+		if (nTime < getTime())
 			return 0;
-		return sumStart + getDiscont() / 100.0 * sumStart / getDays() * nTime;
-		
+		return this.getSumStart() + getDiscont() / 100.0 * this.getSumStart() / getDays() * nTime;
+
 	}
 
 	@Override
 	public double calculateDeposit() {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
+
 }
