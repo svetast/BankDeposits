@@ -1,14 +1,8 @@
 package ua.org.oa.stepanovas;
 
-import java.text.DecimalFormat;
-
 public class DepositSimple extends Deposit {
 
-	public DepositSimple(String nname, 
-			String currency, 
-			int ntime, 
-			double nsumStart, 
-			double ndiscont) {																																								// класса
+	public DepositSimple(String nname, String currency, int ntime, double nsumStart, double ndiscont) { // класса
 		super(nname, currency, ntime, nsumStart, ndiscont);
 	}
 
@@ -21,7 +15,7 @@ public class DepositSimple extends Deposit {
 
 	@Override
 	public double calculateDeposit() {
-		
+
 		return 0;
 	}
 

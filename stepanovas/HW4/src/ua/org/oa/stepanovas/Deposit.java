@@ -4,29 +4,25 @@ public abstract class Deposit {
 	private static final int DAYS = 0;
 	private String name = null; // название депозита
 	private String currency = null; // валюта депозита
-	private int expected_time = 0; // срок депозита в днях по договору
-	private int actual_time = 0; // фактический срок депозита
+	protected int expected_time = 0; // срок депозита в днях по договору
+	protected int actual_time = 0; // фактический срок депозита
 	private double sumStart = 0; // стартовая сумма депозита
 	private double sumFinal = 0; // сумма выплате = основная сумма + проценты
 	private double discont = 0; // ставка по депозиту
-	
-	public Deposit(String name,
-			String currency,
-			int expected_time, 
-			double sumStart,
-			double discont) {
+
+	public Deposit(String name, String currency, int expected_time, double sumStart, double discont) {
 		super();
 		this.name = name;
 		this.currency = currency;
 		this.expected_time = expected_time;
 		this.sumStart = sumStart;
 		this.discont = discont;
-		
+
 	}
 
-	Deposit(String nname, String currency2, int ntime, double nsumStart, double ndiscont, double sumIncrease) {	
+	Deposit(String nname, String currency2, int ntime, double nsumStart, double ndiscont, double sumIncrease) {
 	}
-	
+
 	public String getName() {
 		return name;
 	}
