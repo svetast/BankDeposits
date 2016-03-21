@@ -14,8 +14,8 @@ public class App {
 		bank.addDeposit(new DepositMonth("DepositMonth", "usd", 270, 15000, 11));
 		bank.addDeposit(new DepositMonth("DepositMonth", "grn", 90, 10000, 9));
 		
-		bank.addDeposit(new DepositFreeUse("DepositFreeUse", "usd", 50, 14, 7000, 500));
-		bank.addDeposit(new DepositFreeUse("DepositFreeUse", "euro", 30, 12, 9000, 500));
+		bank.addDeposit(new DepositFreeUse("DepositFreeUse", "usd", 50, 40000, 14, 500));
+		bank.addDeposit(new DepositFreeUse("DepositFreeUse", "euro", 30, 60000, 22, 500));
 
 		for (Deposit d : bank) {
 			System.out.println(d);
