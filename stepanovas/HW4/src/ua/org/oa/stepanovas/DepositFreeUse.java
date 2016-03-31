@@ -4,8 +4,9 @@ public class DepositFreeUse extends Deposit {
 	private double sumIncrease = 0; // сумма довложения
 
 	public DepositFreeUse(String nname, String currency, int ntime, double nsumStart, double ndiscont,
-			double sumIncrease) {
-		super(nname, currency, ntime, nsumStart, ndiscont, sumIncrease);
+			double nSumIncrease) {
+		super(nname, currency, ntime, nsumStart, ndiscont);
+		sumIncrease = nSumIncrease;
 	}
 
 	public double calculateDeposit(int nTime) {
