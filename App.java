@@ -18,7 +18,7 @@ public class App {
 		bank.addDeposit(new DepositFreeUse("DepositFreeUse", "euro", 30, 60000, 22, 500));
 
 		for (Deposit d : bank) {
-			System.out.println(d);
+			System.out.println(d);// вывод всех депозитов
 		}
 	}
 }
